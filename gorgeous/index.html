@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>深海 · 起点</title>
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/222e/222e.github.io@master/images/favicon-32x32-next.png" sizes="32x32">
+	<link rel="apple-touch-icon-precomposed"
+		href="https://cdn.jsdelivr.net/gh/222e/222e.github.io@master/images/apple-touch-icon-next.png">
+	<link href="https://cdn.jsdelivr.net/gh/222e/source@master/gorgeous/css/hovertreewelcome.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		a:hover {
+			cursor: url(https://cdn.jsdelivr.net/gh/222e/source@master/gorgeous/img/pointer.cur), pointer;
+		}
+	</style>
+	<style>
+		*:not([class*='icon']):not(.fa):not(.fas):not(i) {
+			font-family: 'PingFang SC', 'Heiti SC', 'myfont', 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'sans-serif', 'icomoon', 'Icons', 'brand-icons', 'FontAwesome', 'Material Icons', 'Material Icons Extended', 'Glyphicons Halflings' !important;
+		}
+
+		* {
+			font-weight: bold !important;
+			font-family: 'PingFang SC', 'Microsoft YaHei';
+		}
+	</style>
+	<script
+		type="text/javascript">!function () { var s, i, c, a, o = { frameRate: 150, animationTime: 400, stepSize: 100, pulseAlgorithm: !0, pulseScale: 4, pulseNormalize: 1, accelerationDelta: 50, accelerationMax: 3, keyboardSupport: !0, arrowScroll: 50, fixedBackground: !0, excluded: "" }, p = o, u = !1, d = !1, l = { x: 0, y: 0 }, f = !1, m = document.documentElement, h = [], w = /^Mac/.test(navigator.platform), v = { left: 37, up: 38, right: 39, down: 40, spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36 }, y = { 37: 1, 38: 1, 39: 1, 40: 1 }; function b() { if (!f && document.body) { f = !0; var e = document.body, t = document.documentElement, o = window.innerHeight, n = e.scrollHeight; if (m = 0 <= document.compatMode.indexOf("CSS") ? t : e, s = e, p.keyboardSupport && Y("keydown", D), top != self) d = !0; else if (Q && o < n && (e.offsetHeight <= o || t.offsetHeight <= o)) { var r, a = document.createElement("div"); a.style.cssText = "position:absolute; z-index:-10000; top:0; left:0; right:0; height:" + m.scrollHeight + "px", document.body.appendChild(a), c = function () { r || (r = setTimeout(function () { u || (a.style.height = "0", a.style.height = m.scrollHeight + "px", r = null) }, 500)) }, setTimeout(c, 10), Y("resize", c); if ((i = new R(c)).observe(e, { attributes: !0, childList: !0, characterData: !1 }), m.offsetHeight <= o) { var l = document.createElement("div"); l.style.clear = "both", e.appendChild(l) } } p.fixedBackground || u || (e.style.backgroundAttachment = "scroll", t.style.backgroundAttachment = "scroll") } } var g = [], S = !1, x = Date.now(); function k(d, f, m) { var e, t; if (e = 0 < (e = f) ? 1 : -1, t = 0 < (t = m) ? 1 : -1, (l.x !== e || l.y !== t) && (l.x = e, l.y = t, g = [], x = 0), 1 != p.accelerationMax) { var o = Date.now() - x; if (o < p.accelerationDelta) { var n = (1 + 50 / o) / 2; 1 < n && (n = Math.min(n, p.accelerationMax), f *= n, m *= n) } x = Date.now() } if (g.push({ x: f, y: m, lastX: f < 0 ? .99 : -.99, lastY: m < 0 ? .99 : -.99, start: Date.now() }), !S) { var r = q(), h = d === r || d === document.body; null == d.$scrollBehavior && function (e) { var t = M(e); if (null == B[t]) { var o = getComputedStyle(e, "")["scroll-behavior"]; B[t] = "smooth" == o } return B[t] }(d) && (d.$scrollBehavior = d.style.scrollBehavior, d.style.scrollBehavior = "auto"); var w = function (e) { for (var t = Date.now(), o = 0, n = 0, r = 0; r < g.length; r++) { var a = g[r], l = t - a.start, i = l >= p.animationTime, c = i ? 1 : l / p.animationTime; p.pulseAlgorithm && (c = F(c)); var s = a.x * c - a.lastX >> 0, u = a.y * c - a.lastY >> 0; o += s, n += u, a.lastX += s, a.lastY += u, i && (g.splice(r, 1), r--) } h ? window.scrollBy(o, n) : (o && (d.scrollLeft += o), n && (d.scrollTop += n)), f || m || (g = []), g.length ? j(w, d, 1e3 / p.frameRate + 1) : (S = !1, null != d.$scrollBehavior && (d.style.scrollBehavior = d.$scrollBehavior, d.$scrollBehavior = null)) }; j(w, d, 0), S = !0 } } function e(e) { f || b(); var t = e.target; if (e.defaultPrevented || e.ctrlKey) return !0; if (N(s, "embed") || N(t, "embed") && /\.pdf/i.test(t.src) || N(s, "object") || t.shadowRoot) return !0; var o = -e.wheelDeltaX || e.deltaX || 0, n = -e.wheelDeltaY || e.deltaY || 0; w && (e.wheelDeltaX && K(e.wheelDeltaX, 120) && (o = e.wheelDeltaX / Math.abs(e.wheelDeltaX) * -120), e.wheelDeltaY && K(e.wheelDeltaY, 120) && (n = e.wheelDeltaY / Math.abs(e.wheelDeltaY) * -120)), o || n || (n = -e.wheelDelta || 0), 1 === e.deltaMode && (o *= 40, n *= 40); var r = z(t); return r ? !!function (e) { if (!e) return; h.length || (h = [e, e, e]); e = Math.abs(e), h.push(e), h.shift(), clearTimeout(a), a = setTimeout(function () { try { localStorage.SS_deltaBuffer = h.join(",") } catch (e) { } }, 1e3); var t = 120 < e && P(e); return !P(120) && !P(100) && !t }(n) || (1.2 < Math.abs(o) && (o *= p.stepSize / 120), 1.2 < Math.abs(n) && (n *= p.stepSize / 120), k(r, o, n), e.preventDefault(), void C()) : !d || !W || (Object.defineProperty(e, "target", { value: window.frameElement }), parent.wheel(e)) } function D(e) { var t = e.target, o = e.ctrlKey || e.altKey || e.metaKey || e.shiftKey && e.keyCode !== v.spacebar; document.body.contains(s) || (s = document.activeElement); var n = /^(button|submit|radio|checkbox|file|color|image)$/i; if (e.defaultPrevented || /^(textarea|select|embed|object)$/i.test(t.nodeName) || N(t, "input") && !n.test(t.type) || N(s, "video") || function (e) { var t = e.target, o = !1; if (-1 != document.URL.indexOf("www.youtube.com/watch")) do { if (o = t.classList && t.classList.contains("html5-video-controls")) break } while (t = t.parentNode); return o }(e) || t.isContentEditable || o) return !0; if ((N(t, "button") || N(t, "input") && n.test(t.type)) && e.keyCode === v.spacebar) return !0; if (N(t, "input") && "radio" == t.type && y[e.keyCode]) return !0; var r = 0, a = 0, l = z(s); if (!l) return !d || !W || parent.keydown(e); var i = l.clientHeight; switch (l == document.body && (i = window.innerHeight), e.keyCode) { case v.up: a = -p.arrowScroll; break; case v.down: a = p.arrowScroll; break; case v.spacebar: a = -(e.shiftKey ? 1 : -1) * i * .9; break; case v.pageup: a = .9 * -i; break; case v.pagedown: a = .9 * i; break; case v.home: l == document.body && document.scrollingElement && (l = document.scrollingElement), a = -l.scrollTop; break; case v.end: var c = l.scrollHeight - l.scrollTop - i; a = 0 < c ? c + 10 : 0; break; case v.left: r = -p.arrowScroll; break; case v.right: r = p.arrowScroll; break; default: return !0 }k(l, r, a), e.preventDefault(), C() } function t(e) { s = e.target } var n, r, M = (n = 0, function (e) { return e.uniqueID || (e.uniqueID = n++) }), E = {}, T = {}, B = {}; function C() { clearTimeout(r), r = setInterval(function () { E = T = B = {} }, 1e3) } function H(e, t, o) { for (var n = o ? E : T, r = e.length; r--;)n[M(e[r])] = t; return t } function z(e) { var t = [], o = document.body, n = m.scrollHeight; do { var r = (!1 ? E : T)[M(e)]; if (r) return H(t, r); if (t.push(e), n === e.scrollHeight) { var a = O(m) && O(o) || X(m); if (d && L(m) || !d && a) return H(t, q()) } else if (L(e) && X(e)) return H(t, e) } while (e = e.parentElement) } function L(e) { return e.clientHeight + 10 < e.scrollHeight } function O(e) { return "hidden" !== getComputedStyle(e, "").getPropertyValue("overflow-y") } function X(e) { var t = getComputedStyle(e, "").getPropertyValue("overflow-y"); return "scroll" === t || "auto" === t } function Y(e, t, o) { window.addEventListener(e, t, o || !1) } function A(e, t, o) { window.removeEventListener(e, t, o || !1) } function N(e, t) { return e && (e.nodeName || "").toLowerCase() === t.toLowerCase() } if (window.localStorage && localStorage.SS_deltaBuffer) try { h = localStorage.SS_deltaBuffer.split(",") } catch (e) { } function K(e, t) { return Math.floor(e / t) == e / t } function P(e) { return K(h[0], e) && K(h[1], e) && K(h[2], e) } var $, j = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (e, t, o) { window.setTimeout(e, o || 1e3 / 60) }, R = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver, q = ($ = document.scrollingElement, function () { if (!$) { var e = document.createElement("div"); e.style.cssText = "height:10000px;width:1px;", document.body.appendChild(e); var t = document.body.scrollTop; document.documentElement.scrollTop, window.scrollBy(0, 3), $ = document.body.scrollTop != t ? document.body : document.documentElement, window.scrollBy(0, -3), document.body.removeChild(e) } return $ }); function V(e) { var t; return ((e *= p.pulseScale) < 1 ? e - (1 - Math.exp(-e)) : (e -= 1, (t = Math.exp(-1)) + (1 - Math.exp(-e)) * (1 - t))) * p.pulseNormalize } function F(e) { return 1 <= e ? 1 : e <= 0 ? 0 : (1 == p.pulseNormalize && (p.pulseNormalize /= V(1)), V(e)) } var I = window.navigator.userAgent, _ = /Edge/.test(I), W = /chrome/i.test(I) && !_, U = /safari/i.test(I) && !_, G = /mobile/i.test(I), J = /Windows NT 6.1/i.test(I) && /rv:11/i.test(I), Q = U && (/Version\/8/i.test(I) || /Version\/9/i.test(I)), Z = (W || U || J) && !G, ee = !1; try { window.addEventListener("test", null, Object.defineProperty({}, "passive", { get: function () { ee = !0 } })) } catch (e) { } var te = !!ee && { passive: !1 }, oe = "onwheel" in document.createElement("div") ? "wheel" : "mousewheel"; function ne(e) { for (var t in e) o.hasOwnProperty(t) && (p[t] = e[t]) } oe && Z && (Y(oe, e, te), Y("mousedown", t), Y("load", b)), ne.destroy = function () { i && i.disconnect(), A(oe, e), A("mousedown", t), A("keydown", D), A("resize", c), A("load", b) }, window.SmoothScrollOptions && ne(window.SmoothScrollOptions), "function" == typeof define && define.amd ? define(function () { return ne }) : "object" == typeof exports ? module.exports = ne : window.SmoothScroll = ne }();</script>
+	<script id="picviewer-page-script">(function (messageID) {
+			var frameID = Math.random();
+			var frames = {
+				top: window.top,
+			};
+
+			window.addEventListener('message', function (e) {
+				var data = e.data;
+				if (!data || !data.messageID || data.messageID != messageID) return;//通信ID认证
+				var source = e.source;
+				if (source === window) {//来自contentscript,发送出去,或者干嘛。
+					if (data.to) {
+						data.from = frameID;
+						frames[data.to].postMessage(data, '*');
+					} else {
+						switch (data.command) {
+							case 'getIframeObject': {
+								var frameWindow = frames[data.windowId];
+								var iframes = document.getElementsByTagName('iframe');
+								var iframe;
+								var targetIframe;
+								for (var i = iframes.length - 1; i >= 0; i--) {
+									iframe = iframes[i];
+									if (iframe.contentWindow === frameWindow) {
+										targetIframe = iframe;
+										break;
+									};
+								};
+								var cusEvent = document.createEvent('CustomEvent');
+								cusEvent.initCustomEvent('pv-getIframeObject', false, false, targetIframe);
+								document.dispatchEvent(cusEvent);
+							} break;
+						};
+					};
+
+				} else {//来自别的窗口的，contentscript可以直接接收，这里保存下来自的窗口的引用
+					frames[data.from] = source;
+				};
+			}, true)
+		})</script>
+	<style type="text/css">
+		#htmlToothbrush #bodyToothbrush .parentToothbrush .bilibili-player-video {
+			margin: 0 !important;
+		}
+
+		#htmlToothbrush,
+		#bodyToothbrush {
+			overflow: hidden !important;
+			zoom: 100% !important;
+		}
+
+		#htmlToothbrush #bodyToothbrush .parentToothbrush {
+			overflow: visible !important;
+			z-index: auto !important;
+			transform: none !important;
+			-webkit-transform-style: flat !important;
+			transition: none !important;
+			contain: none !important;
+		}
+
+		#htmlToothbrush #bodyToothbrush .absoluteToothbrush {
+			position: absolute !important;
+		}
+
+		#htmlToothbrush #bodyToothbrush .playerToothbrush {
+			position: fixed !important;
+			top: 0px !important;
+			left: 0px !important;
+			width: 100vw !important;
+			height: 100vh !important;
+			max-width: none !important;
+			max-height: none !important;
+			min-width: 0 !important;
+			min-height: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			z-index: 2147483646 !important;
+			border: none !important;
+			background-color: #000 !important;
+			transform: none !important;
+		}
+
+		#htmlToothbrush #bodyToothbrush .parentToothbrush video {
+			object-fit: contain !important;
+		}
+
+		#htmlToothbrush #bodyToothbrush .parentToothbrush .videoToothbrush {
+			width: 100vw !important;
+			height: 100vh !important;
+		}
+
+		#playerControlBtn {
+			text-shadow: none;
+			visibility: hidden;
+			opacity: 0;
+			display: none;
+			transition: all 0.5s ease;
+			cursor: pointer;
+			font: 12px "微软雅黑";
+			margin: 0;
+			width: 64px;
+			height: 20px;
+			line-height: 20px;
+			border: none;
+			text-align: center;
+			position: fixed;
+			z-index: 2147483647;
+			background-color: #27A9D8;
+			color: #FFF;
+		}
+
+		#playerControlBtn:hover {
+			visibility: visible;
+			opacity: 1;
+			background-color: #2774D8;
+		}
+
+		#picinpicBtn {
+			text-shadow: none;
+			visibility: hidden;
+			opacity: 0;
+			display: none;
+			transition: all 0.5s ease;
+			cursor: pointer;
+			font: 12px "微软雅黑";
+			margin: 0;
+			width: 53px;
+			height: 20px;
+			line-height: 20px;
+			border: none;
+			text-align: center;
+			position: fixed;
+			z-index: 2147483647;
+			background-color: #27A9D8;
+			color: #FFF;
+		}
+
+		#picinpicBtn:hover {
+			visibility: visible;
+			opacity: 1;
+			background-color: #2774D8;
+		}
+
+		#leftFullStackButton {
+			display: none;
+			position: fixed;
+			width: 1px;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			z-index: 2147483647;
+			background: #000;
+		}
+
+		#rightFullStackButton {
+			display: none;
+			position: fixed;
+			width: 1px;
+			height: 100vh;
+			top: 0;
+			right: 0;
+			z-index: 2147483647;
+			background: #000;
+		}
+	</style>
+</head>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false"
+	onselectstart="event.returnValue=false">
+
+	<div id="hovertreecontainer">
+
+		<div>
+			<h1 id="h1">愿有你的荣耀，永不散场</h1>
+			<h5 id="h5">&nbsp;</h5>
+			<h2 id="h2">很高兴遇见你</h2>
+			<h5 id="h5">&nbsp;</h5>
+			<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script><span id="hitokoto">
+				<script>hitokoto()</script></span>
+			<h5 id="h5">&nbsp;</h5>
+			<h4 id="h4"><a href="../index.html"></a>colorfulshadowty / 深海</h4></a>
+			<p>&nbsp;</p>
+			<p><strong><a href="../index.html">进入博客</a></strong></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+
+
+	</div>
+
+	<canvas id="canvas" width="1536" height="682"></canvas>
+	<audio autoplay="autoplay">
+		<source src="https://cdn.jsdelivr.net/gh/222e/source@master/gorgeous/video/4.mp3" type="audio/mpeg">
+		您的浏览器不支持播放音乐。请用支持html5的浏览器打开,例如chrome或火狐或者新版IE等。
+		<br>深海
+	</audio>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/222e/source@master/gorgeous/js/hovertreewelcome.js">
+	</script>
+	<script type="text/javascript">
+
+			; (function (window) {
+
+				var ctx,
+					hue,
+					logo,
+					form,
+					buffer,
+					target = {},
+					tendrils = [],
+					settings = {};
+
+				settings.debug = true;
+				settings.friction = 0.5;
+				settings.trails = 20;
+				settings.size = 50;
+				settings.dampening = 0.25;
+				settings.tension = 0.98;
+
+				Math.TWO_PI = Math.PI * 2;
+
+				// ========================================================================================
+				// Oscillator 何问起
+				// ----------------------------------------------------------------------------------------
+
+				function Oscillator(options) {
+					this.init(options || {});
+				}
+
+				Oscillator.prototype = (function () {
+
+					var value = 0;
+
+					return {
+
+						init: function (options) {
+							this.phase = options.phase || 0;
+							this.offset = options.offset || 0;
+							this.frequency = options.frequency || 0.001;
+							this.amplitude = options.amplitude || 1;
+						},
+
+						update: function () {
+							this.phase += this.frequency;
+							value = this.offset + Math.sin(this.phase) * this.amplitude;
+							return value;
+						},
+
+						value: function () {
+							return value;
+						}
+					};
+
+				})();
+
+				// ========================================================================================
+				// Tendril hovertree.com
+				// ----------------------------------------------------------------------------------------
+
+				function Tendril(options) {
+					this.init(options || {});
+				}
+
+				Tendril.prototype = (function () {
+
+					function Node() {
+						this.x = 0;
+						this.y = 0;
+						this.vy = 0;
+						this.vx = 0;
+					}
+
+					return {
+
+						init: function (options) {
+
+							this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+							this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+							this.nodes = [];
+
+							for (var i = 0, node; i < settings.size; i++) {
+
+								node = new Node();
+								node.x = target.x;
+								node.y = target.y;
+
+								this.nodes.push(node);
+							}
+						},
+
+						update: function () {
+
+							var spring = this.spring,
+								node = this.nodes[0];
+
+							node.vx += (target.x - node.x) * spring;
+							node.vy += (target.y - node.y) * spring;
+
+							for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+								node = this.nodes[i];
+
+								if (i > 0) {
+
+									prev = this.nodes[i - 1];
+
+									node.vx += (prev.x - node.x) * spring;
+									node.vy += (prev.y - node.y) * spring;
+									node.vx += prev.vx * settings.dampening;
+									node.vy += prev.vy * settings.dampening;
+								}
+
+								node.vx *= this.friction;
+								node.vy *= this.friction;
+								node.x += node.vx;
+								node.y += node.vy;
+
+								spring *= settings.tension;
+							}
+						},
+
+						draw: function () {
+
+							var x = this.nodes[0].x,
+								y = this.nodes[0].y,
+								a, b;
+
+							ctx.beginPath();
+							ctx.moveTo(x, y);
+
+							for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+								a = this.nodes[i];
+								b = this.nodes[i + 1];
+								x = (a.x + b.x) * 0.5;
+								y = (a.y + b.y) * 0.5;
+
+								ctx.quadraticCurveTo(a.x, a.y, x, y);
+							}
+
+							a = this.nodes[i];
+							b = this.nodes[i + 1];
+
+							ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+							ctx.stroke();
+							ctx.closePath();
+						}
+					};
+
+				})();
+
+				// ----------------------------------------------------------------------------------------
+
+				function init(event) {
+
+					document.removeEventListener('mousemove', init);
+					document.removeEventListener('touchstart', init);
+
+					document.addEventListener('mousemove', mousemove);
+					document.addEventListener('touchmove', mousemove);
+					document.addEventListener('touchstart', touchstart);
+
+					mousemove(event);
+					reset();
+					loop();
+				}
+
+				function reset() {
+
+					tendrils = [];
+
+					for (var i = 0; i < settings.trails; i++) {
+
+						tendrils.push(new Tendril({
+							spring: 0.45 + 0.025 * (i / settings.trails)
+						}));
+					}
+				}
+
+				function loop() {
+
+					if (!ctx.running) return;
+
+					ctx.globalCompositeOperation = 'source-over';
+					ctx.fillStyle = 'rgba(8,5,16,0.4)';
+					ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+					ctx.globalCompositeOperation = 'lighter';
+					ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+					ctx.lineWidth = 1;
+
+					if (ctx.frame % 60 == 0) {
+						console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+					}
+
+					for (var i = 0, tendril; i < settings.trails; i++) {
+						tendril = tendrils[i];
+						tendril.update();
+						tendril.draw();
+					}
+
+					ctx.frame++;
+					ctx.stats.update();
+					requestAnimFrame(loop);
+				}
+
+				function resize() {
+					ctx.canvas.width = window.innerWidth;
+					ctx.canvas.height = window.innerHeight;
+				}
+
+				function start() {
+					if (!ctx.running) {
+						ctx.running = true;
+						loop();
+					}
+				}
+
+				function stop() {
+					ctx.running = false;
+				}
+
+				function mousemove(event) {
+					if (event.touches) {
+						target.x = event.touches[0].pageX;
+						target.y = event.touches[0].pageY;
+					} else {
+						target.x = event.clientX
+						target.y = event.clientY;
+					}
+					event.preventDefault();
+				}
+
+				function touchstart(event) {
+					if (event.touches.length == 1) {
+						target.x = event.touches[0].pageX;
+						target.y = event.touches[0].pageY;
+					}
+				}
+
+				function keyup(event) {
+
+					switch (event.keyCode) {
+						case 32:
+							save();
+							break;
+						default:
+						// console.log(event.keyCode); hovertree.com
+					}
+				}
+
+				function letters(id) {
+
+					var el = document.getElementById(id),
+						letters = el.innerHTML.replace('&amp;', '&').split(''),
+						heading = '';
+
+					for (var i = 0, n = letters.length, letter; i < n; i++) {
+						letter = letters[i].replace('&', '&amp');
+						heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+					}
+
+					el.innerHTML = heading;
+					setTimeout(function () {
+						el.className = 'transition-in';
+					}, (Math.random() * 500) + 500);
+				}
+
+				function save() {
+
+					if (!buffer) {
+
+						buffer = document.createElement('canvas');
+						buffer.width = screen.availWidth;
+						buffer.height = screen.availHeight;
+						buffer.ctx = buffer.getContext('2d');
+
+						form = document.createElement('form');
+						form.method = 'post';
+						form.input = document.createElement('input');
+						form.input.type = 'hidden';
+						form.input.name = 'data';
+						form.appendChild(form.input);
+
+						document.body.appendChild(form);
+					}
+
+					buffer.ctx.fillStyle = 'rgba(8,5,16)';
+					buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+					buffer.ctx.drawImage(canvas,
+						Math.round(buffer.width / 2 - canvas.width / 2),
+						Math.round(buffer.height / 2 - canvas.height / 2)
+					);
+
+					buffer.ctx.drawImage(logo,
+						Math.round(buffer.width / 2 - logo.width / 4),
+						Math.round(buffer.height / 2 - logo.height / 4),
+						logo.width / 2,
+						logo.height / 2
+					);
+
+					window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+
+					// form.input.value = buffer.toDataURL().substr(22);
+					// form.submit(); hovertree.com
+				}
+
+				window.requestAnimFrame = (function () {
+					return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+				})();
+
+				window.onload = function () {
+
+					ctx = document.getElementById('canvas').getContext('2d');
+					ctx.stats = new Stats();
+					ctx.running = true;
+					ctx.frame = 1;
+
+					logo = new Image();
+					logo.src = 'https://cdn.jsdelivr.net/gh/222e/222e.github.io@master/images/favicon-32x32-next.png';
+
+					hue = new Oscillator({
+						phase: Math.random() * Math.TWO_PI,
+						amplitude: 85,
+						frequency: 0.0015,
+						offset: 285
+					});
+
+					letters('h1');
+					letters('h2');
+
+					document.addEventListener('mousemove', init);
+					document.addEventListener('touchstart', init);
+					document.body.addEventListener('orientationchange', resize);
+					window.addEventListener('resize', resize);
+					window.addEventListener('keyup', keyup);
+					window.addEventListener('focus', start);
+					window.addEventListener('blur', stop);
+
+					resize();
+
+					if (window.DEBUG) {
+
+						var gui = new dat.GUI();
+
+						// gui.add(settings, 'debug');
+						settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+						settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+						settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+						settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+						settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+
+						document.body.appendChild(ctx.stats.domElement);
+					}
+				};
+
+			})(window);
+
+	</script>
+
+	<tbdiv id="picinpicBtn"></tbdiv>
+	<tbdiv id="playerControlBtn"></tbdiv>
+	<tbdiv id="leftFullStackButton"></tbdiv>
+	<tbdiv id="rightFullStackButton"></tbdiv>
+	<div id="forest-content-host"></div>
+</body>
+
+</html>
